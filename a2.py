@@ -54,6 +54,8 @@ def contains_sequence(dna1, dna2):
 
 def is_valid_sequence(dna):
     """ (str) -> bool
+    
+    return True if and only dna contain 'A', 'T', 'C', 'G'. Otherwise return False 
 
     >>> is_valid_sequence('ATACAG')
     True
@@ -69,6 +71,8 @@ def is_valid_sequence(dna):
 
 def insert_sequence(dna1, dna2, index):
     """ (str, str, int) -> str
+    
+    return new dna where dna2 inserted into dna1 on index position.
 
     >>> insert_sequence('CCGG', 'AT', 2)
     CCATGG
@@ -84,6 +88,8 @@ def insert_sequence(dna1, dna2, index):
 
 def get_complement(nucleotide):
     """ (str) -> str
+    
+    return complement of nucleotide
 
     >>> get_complement('A')
     T
@@ -107,6 +113,8 @@ def get_complement(nucleotide):
 
 def get_complementary_sequence(dna):
     """ (str) -> str
+    
+    return compelentary sequence of dna
 
     >>> get_complementary_sequence('ATCCG')
     TAGGC
